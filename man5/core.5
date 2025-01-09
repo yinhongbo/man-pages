@@ -132,6 +132,13 @@ option.
 The kernel was configured without the
 .BR CONFIG_COREDUMP
 option.
+.IP *
+(Since Linux 3.7)
+The
+.BR RLIMIT_CORE
+(core file size) resource limits for the process are set to 1 when
+.I /proc/sys/kernel/core_pattern
+is s pipe
 .PP
 In addition,
 a core dump may exclude part of the address space of the process if the
